@@ -1,8 +1,6 @@
-FROM registry.access.redhat.com/ubi8/python-38
+FROM registry.access.redhat.com/ubi8/python-38:1
 
-ENV APP_ROOT=/usr/src/app 
-
-WORKDIR $APP_ROOT
+# WORKDIR /opt/app-root/src
 
 ADD requirements.txt .
 
