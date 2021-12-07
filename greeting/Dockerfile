@@ -1,6 +1,6 @@
 FROM registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift AS builder
 
-WORKDIR /app-build
+# WORKDIR /app-build
 
 COPY mvnw .
 COPY .mvn .mvn
