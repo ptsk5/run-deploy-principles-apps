@@ -2,6 +2,10 @@ FROM registry.access.redhat.com/ubi8/nodejs-14:1-51 as build
 
 WORKDIR /app
 COPY package*.json ./
+
+RUN chgrp -R 0 /app && \
+    chmod -R g=u /app
+    
 # RUN npm install
 RUN npm ci --only=production
 
