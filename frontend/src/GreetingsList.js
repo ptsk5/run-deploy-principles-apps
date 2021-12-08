@@ -4,7 +4,7 @@ class GreetingsList extends React.Component {
     const greetings = this.props.greetings;
     return (
       <div className="container">
-        <h3>Greetings</h3>
+        <h3>Greetings test</h3>
 
         {greetings &&
           greetings.map((greeting, index) => (
